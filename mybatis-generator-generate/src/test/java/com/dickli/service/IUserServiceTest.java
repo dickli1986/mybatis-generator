@@ -24,6 +24,7 @@ class IUserServiceTest {
 
     @Test
     void modify() {
+        userService.modifyById(User.builder().id(1L).userName("张三儿").build());
     }
 
     @Test
@@ -40,6 +41,6 @@ class IUserServiceTest {
 
     @Test
     void queryPageList() {
-        System.out.println("=========" + JSON.toJSONString(userService.queryPageList(User.builder().status(1).build(), 0, 2)));
+        System.out.println("=========" + JSON.toJSONString(userService.queryPageList(User.builder().status(1).build(), 0, 0)));
     }
 }

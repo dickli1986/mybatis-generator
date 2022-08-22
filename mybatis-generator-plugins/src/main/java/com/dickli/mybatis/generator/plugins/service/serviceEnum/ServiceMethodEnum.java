@@ -2,7 +2,7 @@ package com.dickli.mybatis.generator.plugins.service.serviceEnum;
 
 public enum ServiceMethodEnum {
     SAVE("save"),
-    MODIFY("modify"),
+    MODIFY("modifyById"),
     REMOVE("removeById"),
     QUERY("queryById"),
     QUERY_LIST("queryList"),

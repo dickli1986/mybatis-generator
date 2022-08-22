@@ -24,7 +24,7 @@ public class UserServiceImpl implements IUserService {
     }
 
     @Override
-    public int modify(User user) {
+    public int modifyById(User user) {
         return userMapper.updateByPrimaryKeySelective(user);
     }
 

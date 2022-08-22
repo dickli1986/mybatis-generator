@@ -7,7 +7,7 @@ import java.util.List;
 public interface IUserService {
     int save(User user);
 
-    int modify(User user);
+    int modifyById(User user);
 
     int removeById(Long id);
 
